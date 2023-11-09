@@ -1,0 +1,52 @@
+﻿@model WebProjeto_Novo.Models.Cliente
+
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome_Cli)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome_Cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tell_Cli)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tell_Cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email_cli)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPF_Cli)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CPF_Cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data_de_Nascimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Data_de_Nascimento)
+        </dd>
+
+    </dl>
+
+</div>
+<p>
+    @Html.ActionLink("Voltar", "Index")
+</p>
